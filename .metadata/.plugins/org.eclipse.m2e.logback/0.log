@@ -550,3 +550,6 @@
 2024-10-08 23:39:23,227 [Worker-124: Launching paticentpath - PaticentpathApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-10-08 23:39:23,238 [Worker-124: Launching paticentpath - PaticentpathApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-10-08 23:39:23,240 [Worker-124: Launching paticentpath - PaticentpathApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\paticentpath\paticentpath\src\test\resources
+2024-10-08 23:55:03,614 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-08 23:55:03,627 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-08 23:55:03,629 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\paticentpath\paticentpath\src\test\resources
