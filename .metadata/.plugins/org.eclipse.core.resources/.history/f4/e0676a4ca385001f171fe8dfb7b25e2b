@@ -33,14 +33,12 @@ public class Userserviceimpl implements UserService {
 	 
 		User user = userrepo.findByEmail(email);
 		String res="";
-		 if(user==null) {
-				res =  "Email Not found";
-				return "Email not found";
-				}
 		 if(user!=null  && user.getPassword().equals(password)) {
 			res =  "Login Sucess";
 		}
-		
+		 if(user==null) {
+			res =  "Email Not found";
+			}
 		  if(!password.equals(user.getPassword())) {
 				res =  "Wrong password try again";
 			}

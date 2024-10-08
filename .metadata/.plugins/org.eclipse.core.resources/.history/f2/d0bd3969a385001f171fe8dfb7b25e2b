@@ -35,7 +35,6 @@ public class Userserviceimpl implements UserService {
 		String res="";
 		 if(user==null) {
 				res =  "Email Not found";
-				return "Email not found";
 				}
 		 if(user!=null  && user.getPassword().equals(password)) {
 			res =  "Login Sucess";
