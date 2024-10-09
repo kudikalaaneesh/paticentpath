@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'patient_path_frountend';
+ public  useractive:boolean=true;
 }
