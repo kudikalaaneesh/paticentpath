@@ -7,9 +7,11 @@ import { DoctorlistComponent } from './user/doctorlist/doctorlist.component';
 import { HomeComponent } from './user/home/home.component';
 import { MyaccountComponent } from './user/myaccount/myaccount.component';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/userpage',pathMatch:'full'},
+  // {path:'',redirectTo:'/userpage',pathMatch:'full'},
+  {path:'navbar',component:NavbarComponent},
   {path:'userpage',component:UserpageComponent},
   {path:'home',component:HomeComponent},
   {path:'book',component:BookComponent},

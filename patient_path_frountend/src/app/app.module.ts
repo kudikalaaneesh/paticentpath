@@ -15,6 +15,7 @@ import { MyaccountComponent } from './user/myaccount/myaccount.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     MyaccountComponent,
     AboutComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

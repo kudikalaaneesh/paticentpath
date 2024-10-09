@@ -1,27 +1,78 @@
+/* Toolbar Styles */
+
+
+
+
+mat-toolbar {
+    background-color: #3c8cb1; /* Toolbar background color */
+    color: white; /* Text color */
+    padding: 0 16px; /* Padding around the toolbar */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+/* Toolbar Title Styles */
+mat-toolbar span {
+    font-size: 1.5rem; /* Adjust font size for the title */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Spacer for Alignment */
+.example-spacer {
+    flex: 1; /* Takes up available space to push buttons to the right */
+}
+
+/* Button Styles */
+.example-icon {
+    margin-left: 16px; /* Spacing between buttons */
+    background-color: transparent; /* Button background */
+    color: white; /* Button text color */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+/* Button Hover Effect */
+.example-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Profile Icon Styles */
+.profile-icon {
+    color: white; /* Profile icon color */
+}
+
+/* Menu Item Styles */
+mat-menu {
+    min-width: 200px; /* Set a minimum width for the menu */
+}
+
+/* Menu Item Hover Effect */
+mat-menu button:hover {
+    background-color: rgba(60, 140, 177, 0.1); /* Light background on hover */
+}
+
 /* General Styles */
-body {
+/* body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* A light background for contrast */
-}
+    background-color: #f5f5f5; /* A light background for contrast 
+} */
 
-h1{
+h1 {
     text-align: center;
     color: rgb(46, 105, 142);
     font-size: 3rem;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
 }
 
-h3{
+h3 {
     font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
     color: rgb(106, 150, 183);
     font-weight: bold;
     text-align: center;
 }
+
 /* Form Styles */
 form {
     max-width: 600px; /* Limit the width of the form */
@@ -70,4 +121,17 @@ select {
 
 .btn:hover {
     background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Flexbox Alignment for Form Elements */
+form > label,
+form > input,
+form > select {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Center items vertically */
+}
+
+/* Ensuring Buttons Align Properly */
+.btn {
+    align-self: flex-end; /* Align button at the end */
 }
