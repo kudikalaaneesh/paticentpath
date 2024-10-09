@@ -1,4 +1,85 @@
 {
+<<<<<<< HEAD
+  "signup": [
+    {
+      "id": "986f",
+      "email": "abc@gmail.com",
+      "firstName": "xyz",
+      "lastNmae": "",
+      "password": "123",
+      "age": "22",
+      "phone": "41431453"
+    },
+    {
+      "id": "7f99",
+      "email": "",
+      "firstName": "",
+      "lastNmae": "",
+      "password": "",
+      "age": "",
+      "phone": ""
+    },
+    {
+      "id": "4cab",
+      "email": "",
+      "firstName": "",
+      "lastNmae": "",
+      "password": "",
+      "age": "",
+      "phone": ""
+    },
+    {
+      "id": "82db",
+      "email": "cdnmb",
+      "firstName": "bjahcb",
+      "lastName": "acbkjh",
+      "password": "javcj",
+      "age": "20",
+      "phone": "3213"
+    },
+    {
+      "id": "ee83",
+      "email": "gdu",
+      "firstName": "jasdjh",
+      "lastName": "bavb",
+      "password": "djhbj",
+      "age": "20",
+      "phone": "ac"
+    },
+    {
+      "id": "4117",
+      "email": "newuser",
+      "firstName": "new",
+      "lastName": "user",
+      "password": "123",
+      "age": "20",
+      "phone": "12"
+    },
+    {
+      "id": "ad07",
+      "email": "",
+      "firstName": "",
+      "lastName": "",
+      "password": "",
+      "age": "",
+      "phone": ""
+    },
+    {
+      "id": "2f5c",
+      "email": "",
+      "firstName": "",
+      "lastName": "",
+      "password": "",
+      "age": "",
+      "phone": ""
+    }
+  ],
+  "admin": [
+    {
+      "email": "admin",
+      "password": "123",
+      "id": "ea4a"
+=======
   "bookappointment": [
     {
       "id": "d780",
@@ -97,6 +178,7 @@
     {
       "id": "a899",
       "writeReview": null
+>>>>>>> 0defdb41f4016512a016ea0995a50ecbba386e03
     }
   ]
 }
