@@ -8,6 +8,10 @@ import { HomeComponent } from './user/home/home.component';
 import { MyaccountComponent } from './user/myaccount/myaccount.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TestdetailsComponent } from './admin/testdetails/testdetails.component';
+import { AdminpageComponent } from './admin/adminpage/adminpage.component';
+import { AccountComponent } from './admin/account/account.component';
+import { AllorderComponent } from './admin/allorder/allorder.component';
 
 const routes: Routes = [
   // {path:'',redirectTo:'/userpage',pathMatch:'full'},
@@ -17,7 +21,12 @@ const routes: Routes = [
   {path:'book',component:BookComponent},
   {path:'doctorlist',component:DoctorlistComponent},
   {path:'myaccount',component:MyaccountComponent},
-  {path:'about',component:AboutComponent}
+  {path:'about',component:AboutComponent},
+  { path: 'adminpage', component: AdminpageComponent },
+  {path:'testdetails',component:TestdetailsComponent},
+  {path:'doctorlist',component:DoctorlistComponent},
+  {path:'allorder',component:AllorderComponent},
+  {path:'account',component:AccountComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,81 @@
+<!-- heder -->
+<div mat-dialog-title>
+    <p>Add Doctor Details</p>
+</div>
+<form  [formGroup]="newData" (ngSubmit)="onSave()">
+
+    <!-- content  -->
+<div mat-dialog-content>
+    <!-- dummy to avoid the overlpa with headin -->
+    <p></p>
+     
+
+     <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Doctor Name</mat-label>
+            <input matInput placeholder="Enter the DoctorName" formControlName="name">
+            <mat-hint>Add Doctor Name</mat-hint>
+          </mat-form-field>
+     </p>
+
+     <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Hospital Name</mat-label>
+            <input matInput placeholder="Enter the steps" formControlName="hospitalName">
+            
+            <mat-hint>Add your Hospital Name?</mat-hint>
+          </mat-form-field>
+     </p>
+
+     <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Qualification</mat-label>
+            <input matInput placeholder="Enter the Education" formControlName="qualification">
+            
+            <mat-hint>Add your qualification?</mat-hint>
+          </mat-form-field>
+     </p>
+
+     <p>
+        <mat-form-field appearance="outline">
+            <mat-label>specialty</mat-label>
+            <input matInput placeholder="Enter the specialty" formControlName="specialty">
+            
+            <mat-hint>Add your specialty?</mat-hint>
+          </mat-form-field>
+     </p>
+
+     <p>
+        <mat-form-field appearance="outline">
+            <mat-label>avaiable</mat-label>
+            <input matInput placeholder="Enter the specialty" formControlName="avaiable">
+            
+            <mat-hint>avaiable?(yes or no)</mat-hint>
+          </mat-form-field>
+     </p>
+
+     <p>
+        <mat-form-field appearance="outline">
+            <mat-label>expercince</mat-label>
+            <input matInput placeholder="Enter the specialty" formControlName="expercince">
+            
+            <mat-hint>Add your expercince?</mat-hint>
+          </mat-form-field>
+     </p>
+
+</div>
+
+<!-- acton button  -->
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="close()">
+        cancel
+    </button>
+
+    <button mat-raised-button color="primary">
+        save
+    </button>
+
+
+</div>
+
+</form>

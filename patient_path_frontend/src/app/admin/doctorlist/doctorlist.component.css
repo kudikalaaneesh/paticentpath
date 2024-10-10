@@ -1,0 +1,74 @@
+.delete-icon {
+    /* background-color: red; */
+    color: white;
+  }
+  .delete-button{
+    background-color: rgb(249, 76, 76);
+  }
+  
+  /* styles.css or component-specific stylesheet */
+  .test-container {
+      display: flex;               /* Use flexbox layout */
+      flex-wrap: wrap;            /* Allow cards to wrap */
+      gap: 20px;                  /* Space between cards */
+      justify-content: center;     /* Center the cards */
+      padding: 20px;              /* Padding around the container */
+    }
+    
+    .card {
+      background-color: #ffffff;  /* Card background color */
+      border: 1px solid #e0e0e0;  /* Light border */
+      border-radius: 8px;         /* Rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 15px;              /* Padding inside the card */
+      width: 300px;               /* Fixed width for cards */
+      min-height: 150px;          /* Minimum height */
+      transition: transform 0.2s; /* Animation for hover effect */
+    }
+    
+    .card h3 {
+      margin: 0 0 10px 0;        /* Margin for the heading */
+    }
+    
+    .card p {
+      margin: 0;                  /* Reset margin for paragraph */
+    }
+    .filter{
+      width: 70%;
+      padding-top: 2%;
+      
+    }
+    .button{
+      margin-left: 5%;
+    }
+    .button:hover{
+      color: #3f51b5;
+    }
+
+    .option{
+      margin: 3%;
+    }
+    .option1{
+      /* margin: 3%; */
+      background-color: green;
+    }
+    .option2{
+      /* margin: 3%; */
+      background-color: rgb(249, 58, 58);
+    }
+    
+  
+
+/* Optional: Style for button hover */
+.button:hover {
+  background-color: #3f51b5; /* Change color on hover */
+  color: white; /* Change text color on hover */
+}
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;              /* Full width on smaller screens */
+      }
+    }
+    

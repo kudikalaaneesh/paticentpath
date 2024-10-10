@@ -24,6 +24,40 @@
       <button mat-menu-item >My Orders</button>
       <button mat-menu-item >Logout</button>
     </mat-menu>
+  }@else if(adminactive){
+
+    <!-- admin dashboard -->
+
+    
+    <mat-toolbar>
+      <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+      <span [routerLink]="['/adminpage']">Patient Path (PP)</span>
+      <span class="example-spacer"></span>
+      <button mat-raised-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/testdetails']">
+          Test_Deatils
+         </button>
+      <button mat-raised-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/doctorlist']">
+       Doctor
+      </button>
+      <button mat-raised-button class="example-icon favorite-icon" aria-label="Example icon-button with share icon" [routerLink]="['/allorder']">
+        All_Order
+      </button>
+    
+      <!-- Profile Icon Button -->
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon favorite-icon" aria-label="Profile Menu">
+      <mat-icon class="profile-icon">account_circle</mat-icon>
+    </button>
+    
+    <!-- Menu -->
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="['/account']">My Account</button>
+      <button mat-menu-item >Logout</button>
+    </mat-menu>
+    
+    </mat-toolbar>
+    
   }
   @else{
     <button>login</button>
