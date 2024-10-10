@@ -1,8 +1,4 @@
 /* Toolbar Styles */
-
-
-
-
 mat-toolbar {
     background-color: #3c8cb1; /* Toolbar background color */
     color: white; /* Text color */
@@ -51,13 +47,6 @@ mat-menu button:hover {
 }
 
 /* General Styles */
-/* body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5; /* A light background for contrast 
-} */
-
 h1 {
     text-align: center;
     color: rgb(46, 105, 142);
@@ -117,6 +106,9 @@ select {
     cursor: pointer; /* Pointer cursor */
     font-size: 16px; /* Font size */
     transition: background-color 0.3s ease; /* Transition effect */
+    display: flex; /* Use flex for alignment */
+    justify-content: center; /* Center text */
+    align-items: center; /* Center text vertically */
 }
 
 .btn:hover {
@@ -128,10 +120,11 @@ form > label,
 form > input,
 form > select {
     display: flex; /* Use flexbox for better alignment */
-    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Stack elements vertically */
 }
 
 /* Ensuring Buttons Align Properly */
 .btn {
     align-self: flex-end; /* Align button at the end */
+    margin-top: 20px; /* Add space above the button */
 }

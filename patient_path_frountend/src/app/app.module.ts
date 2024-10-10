@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatDialogModule } from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -12,8 +13,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import {  FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { UserpageComponent } from './user/userpage/userpage.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { DoctorlistComponent } from './user/doctorlist/doctorlist.component';
@@ -24,6 +24,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EditProfileComponent } from './user/editprofile/editprofile.component';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MyaccountComponent,
     AboutComponent,
     NavbarComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,19 +49,21 @@ import { NavbarComponent } from './navbar/navbar.component';
     ReactiveFormsModule,
     RouterLink,
     HttpClientModule,
-    
-   
+    MatFormFieldModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
     MatMenuModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
+  
   providers: [
     provideAnimationsAsync()
   ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

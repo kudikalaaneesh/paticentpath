@@ -1,0 +1,21 @@
+<form [formGroup]="editProfileForm" (ngSubmit)="onSubmit()">
+    <h3>Edit Your Profile</h3>
+
+    <mat-form-field appearance="fill">
+        <label for="name">Name</label>
+        <input matInput formControlName="name" type="text" placeholder="Your Name" required name="name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <label for="email">Email</label>
+        <input matInput formControlName="email" type="email" placeholder="Your Email" required email="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <label for="number">number</label>
+        <input matInput formControlName="phone" type="text" placeholder="Your Phone Number" required pattern="\\+?[0-9]*">
+    </mat-form-field>
+
+    <button mat-button type="submit" color="primary" [disabled]="!editProfileForm.valid">Save</button>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+</form>

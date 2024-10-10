@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'; 
 import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service'; 
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-login',
@@ -21,7 +22,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private loginService: LoginService, 
-    private router: Router
+    private router: Router,
+    private _applogin:AppComponent
   ) {}
 
   ngOnInit(): void {
@@ -45,8 +47,11 @@ export class LoginComponent implements OnInit {
       if (user) {
         alert("Login Successful");
         this.loginForm.reset();
-        
-        this.router.navigate(['dashboard']); 
+        localStorage.setItem("useremail",this.loginForm.value.email);
+        console.log(localStorage.getItem("useremail"));
+        // this.router.navigate(['dashboard']); 
+        this._applogin.loginactive();
+        this.router.navigate(['home']);
       } else {
         alert("Invalid Credentials");
       }

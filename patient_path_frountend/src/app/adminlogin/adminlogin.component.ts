@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'; 
 import { Router } from '@angular/router';
 import { AdminLoginService } from '../services/adminlogin.service'; 
-
+import { AppComponent } from '../app.component';
 @Component({
   selector: 'app-adminlogin',
   templateUrl: './adminlogin.component.html',
@@ -20,7 +20,8 @@ export class AdminloginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private adminLoginService: AdminLoginService, 
-    private router: Router
+    private router: Router,
+    private _applogin:AppComponent
   ) {}
 
   ngOnInit(): void {
@@ -44,8 +45,11 @@ export class AdminloginComponent implements OnInit {
       if (user) {
         alert("Admin Login Successful");
         this.adminForm.reset();
-        
-        this.router.navigate(['admin-dashboard']); 
+        localStorage.setItem("useremail",this.adminForm.value.email);
+        console.log(localStorage.getItem("useremail"))
+                 this._applogin.loginactive();
+        // this.router.navigate(['admin-dashboard']);
+        this.router.navigate(['home']); 
       } else {
         alert("Invalid Admin Credentials");
       }

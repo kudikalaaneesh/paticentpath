@@ -13,8 +13,8 @@ export class BookComponent {
   bookAppointmentForm!:FormGroup;
   reviewForm!:FormGroup;
 
-bookingForm: any;
-review: any;
+// bookingForm: any;
+// review: any;
 
   
   constructor(
@@ -50,14 +50,25 @@ review: any;
       )
   }
 }
-  onBookSubmit(){
-    if(this.bookAppointmentForm.value){
-    this.bookServices.submitBooking(this.bookAppointmentForm.value).subscribe(
-      res=>{
-        alert("Booking submitted successfully");
-        this.bookAppointmentForm.reset();
+  onBookSubmit():void{
+    if(this.bookAppointmentForm.valid){
+    const bookingData=this.bookAppointmentForm.value;
+    this.bookServices.submitBooking(bookingData).subscribe(
+      next => {
+          alert("Booking submitted successfully");
+          this.bookAppointmentForm.reset(); 
+          console.log("booking is successfull",bookingData);
+      },
+      error => {
+          if (error.status === 400) {
+              alert("Please fill in all required fields correctly.");
+          } else {
+              alert("An error occurred while submitting your booking. Please try again later.");
+          }
       }
-    )
+  );
+  } else {
+    alert("please fill the fields correctly");
   }
 
 

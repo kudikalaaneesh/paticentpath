@@ -1,0 +1,50 @@
+/* General Form Styles */
+form {
+    max-width: 500px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header Styles */
+h3 {
+    text-align: center; /* Center the heading */
+    color: #3c8cb1; /* Match the primary color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form Field Styles */
+mat-form-field {
+    width: 100%; /* Full width for form fields */
+    margin-bottom: 15px; /* Space between fields */
+}
+
+/* Button Styles */
+button {
+    width: 48%; /* Set width for buttons */
+    margin-top: 10px; /* Space above the buttons */
+}
+
+/* Primary Button */
+button[type="submit"] {
+    background-color: #3c8cb1; /* Primary button background color */
+    color: white; /* Button text color */
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #357a98; /* Darker shade on hover */
+}
+
+/* Cancel Button */
+button.cancel {
+    background-color: transparent; /* Transparent background */
+    color: #3c8cb1; /* Match toolbar color */
+}
+
+/* Cancel Button Hover Effect */
+button.cancel:hover {
+    background-color: rgba(60, 140, 177, 0.1); /* Light background on hover */
+}

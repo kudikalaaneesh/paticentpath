@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "signup": [
     {
       "id": "986f",
@@ -79,7 +78,8 @@
       "email": "admin",
       "password": "123",
       "id": "ea4a"
-=======
+    }
+  ],
   "bookappointment": [
     {
       "id": "d780",
@@ -172,13 +172,51 @@
       "doctors": "general",
       "specialist": "cardiologist",
       "date": "2024-10-11"
+    },
+    {
+      "id": "fea4",
+      "name": "",
+      "email": "",
+      "number": "",
+      "hospital": "",
+      "doctors": "",
+      "specialist": "",
+      "date": ""
+    },
+    {
+      "id": "9eb8",
+      "name": "trisha",
+      "email": "tchowdhury455@gmail.com",
+      "number": 9862710589,
+      "hospital": "hospital2",
+      "doctors": "specialist",
+      "specialist": "cardiologist",
+      "date": "2024-10-17"
+    },
+    {
+      "id": "ccf6",
+      "name": "trisha22222",
+      "email": "tchowdhury455@gmail.com",
+      "number": 9862710589,
+      "hospital": "hospital2",
+      "doctors": "general",
+      "specialist": "dermatologist",
+      "date": "2024-10-31"
     }
   ],
   "review": [
     {
       "id": "a899",
       "writeReview": null
->>>>>>> 0defdb41f4016512a016ea0995a50ecbba386e03
+    },
+    {
+      "id": "261c",
+      "writeReview": "sdjkadjkasd"
+    },
+    {
+      "id": "acc7",
+      "writeReview": "sdjkadjkasd"
     }
-  ]
+  ],
+  "editprofile": []
 }

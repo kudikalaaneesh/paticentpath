@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-
-
-
-=======
-
 <mat-toolbar>
   <span>Patient Path(pp)</span>
   <span class="example-spacer"></span>
-  @if(useractive){
+  @if(!useractive){
   <button mat-raised-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/home']">
     Home
   </button>
@@ -26,8 +20,8 @@
     
     <mat-menu #menu="matMenu">
       <button mat-menu-item [routerLink]="['/myaccount']" >My Account</button>
-      <button mat-menu-item >My Orders</button>
-      <button mat-menu-item >Logout</button>
+      <button mat-menu-item   [routerLink]="['/myorders']">My Orders</button>
+      <button mat-menu-item  [routerLink]="['/login']" (click)="logout()"> Logout</button>
     </mat-menu>
   }
   @else{
@@ -37,5 +31,4 @@
 </mat-toolbar>
 
 
->>>>>>> 0defdb41f4016512a016ea0995a50ecbba386e03
 <router-outlet></router-outlet>
